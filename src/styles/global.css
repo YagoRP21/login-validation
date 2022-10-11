@@ -9,7 +9,7 @@
 /*----- Body Config ----- */
 
 body {
-    @apply h-screen m-0 flex justify-center bg-quantickaBG bg-cover bg-no-repeat
+    @apply bg-[#190f2c] sm:h-screen sm:flex sm:justify-center sm:bg-quantickaBG bg-cover bg-no-repeat overflow-hidden
 }
 
 /*----- Body Config End----- */
@@ -87,7 +87,7 @@ nav li {
 /*----- Container--form ----- */
 
 .container--form{
-    @apply flex items-center justify-center w-96 max-w-sm my-32 mx-14 p-8 bg-white bg-opacity-80 rounded-lg shadow-lg text-center lg:mx-[37%]
+    @apply sm:flex sm:items-center sm:justify-center sm:w-96 max-w-sm my-32 mx-0 sm:mx-14 p-8 bg-white bg-opacity-80 rounded-lg shadow-lg text-center lg:mx-[37%]
 }
 
 .container--form,
