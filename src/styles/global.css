@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply m-0 p-0
+}
+
+/*----- Body Config ----- */
+
+body {
+    @apply h-screen m-0 flex justify-center bg-quantickaBG bg-cover bg-no-repeat
+}
+
+/*----- Body Config End----- */
+
+/*----- SECTION/LOGO ------- */
+
+.top {
+    @apply bg-[#0b0513] lg:py-5 py-10
+}
+
+.logo {
+    @apply float-left mx-8 block cursor-pointer
+}
+
+/*----- SECTION/LOGO End------- */
+
+/*----- Menu--Desktop ----- */
+
+.desktop-navbar {
+    @apply lg:flex lg:w-screen hidden lg:items-center lg:justify-center
+}
+
+.desktop-navbar header {
+    @apply lg:mt-4 flex
+}
+
+.menu--desktop {
+    @apply font-bold mt-1 mr-5 ml-[65rem]
+}
+
+.menu--desktop li {
+    @apply inline-block mx-5
+}
+
+.menu--desktop a {
+    @apply no-underline text-[#13a589] hover:opacity-70
+}
+
+/*----- Menu--Desktop End----- */
+
+/*----- Mobile--Menu ----- */
+
+.mobile-navbar {
+    @apply lg:hidden float-right flex items-center
+}
+
+.mobile-header {
+    @apply w-screen lg:hidden
+}
+
+.mobile-header img {
+    @apply mt-2
+}
+
+.logo {
+    @apply w-14 -mt-6
+}
+
+nav ul {
+    @apply left-0 block w-full h-0 absolute z-[9] duration-500 mt-4
+}
+
+nav li {
+    @apply py-8 text-center font-bold block w-full bg-[#0b0513] opacity-90 border-b border-b-[#190f2c] text-white hover:bg-[#190f2c] hover:text-[#13a589]
+}
+
+/* Mobile Button */
+
+.hamburguer-icon, .close-icon {
+    @apply text-xl cursor-pointer mx-8 -mt-2 md:hidden z-[9] text-white items-end flex justify-end
+}
+
+/*Mobile-Button End*/
+
+/*----- Container--form ----- */
+
+.container--form{
+    @apply flex items-center justify-center w-96 max-w-sm my-32 mx-14 p-8 bg-white bg-opacity-80 rounded-lg shadow-lg text-center lg:mx-[37%]
+}
+
+.container--form,
+.form__input,
+.form_button{
+    @apply font-bold text-base
+}
+
+.form__title {
+    @apply text-[#190f2c] mb-4 text-3xl
+}
+
+.form__input-group {
+    @apply mb-2
+}
+
+.form__input {
+    @apply block w-full p-3 box-border px-10 py-2 rounded-xl border-solid border border-zinc-300 outline-none bg-zinc-200 transition ease-in focus:border-[#13a589] duration-200 
+}
+
+.form__button {
+    @apply w-full text-white mt-1 py-2 px-8 font-bold text-xl border-none rounded-md outline-none cursor-pointer bg-[#190f2c] hover:bg-[#0b0513] active:scale-95
+}
+
+.form__text {
+    @apply text-center mt-2 -mb-1 hover:opacity-80 hover:border-b hover:border-b-[#190f2c]
+}
+
+.form__input--error-message {
+    @apply text-red-700 mt-2 text-sm
+}
+
